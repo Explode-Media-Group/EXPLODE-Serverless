@@ -4,7 +4,7 @@ EXPLODE Serverless App is a serverless app using static HTML + HTMX 2.0 + SQLITE
 ## Static HTML
 Static HTML websites can run on Github pages, or anything for that matter. 
 
-## HTML 2.0
+## HTMX 2.0
 HTMX 2.0 is a library that allows you to access modern browser features directly from HTML, rather than using javascript. This anchor tag tells a browser: “When a user clicks on this link, issue an HTTP GET request to '/blog' and load the response content into the browser window”. We use is to make static html websites dynamic.
 
 ## SQLITE.js
