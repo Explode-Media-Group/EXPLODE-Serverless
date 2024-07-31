@@ -1,5 +1,5 @@
 # EXPLODE-Serverless
-EXPLODE Serverless App is a serverless app using static HTML + HTMX 2.0 + SQLITE3 + pubsub + TailwindCSS + CloudFlare R2.
+EXPLODE Serverless App is a serverless app using static HTML + HTMX 2.0 + SQLITE3 + pubsub + TailwindCSS + CloudFlare R2 + CloudFlare D1 + Workers.
 
 ## Static HTML
 Static HTML websites can run on Github pages, or anything for that matter. 
