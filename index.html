@@ -3,8 +3,15 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.12.10/full.min.css" integrity="sha512-K9pVsN3uXmCWVECAr34oUTE6XaqNZTEES/rzJ1wFiY7fSfM+NRkkzxe3++r14GcbZOjxuQ9f9YyzvKlmn6O8nA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+          }
+        </style>
       <title></title>
       <meta name="description" content="">
     
@@ -23,7 +30,7 @@
   </head>
   <body hx-ext="head-support" hx-ext="ajax-header">
     <header>  
-      <div class="navbar isolate bg-current backdrop-opacity-85 backdrop-blur-xl shadow-lg ring-1 ring-black/5 fixed">
+      <div class="navbar text-slate-950 isolate bg-base-100/20 backdrop-blur-xl ring-1 ring-black/5 fixed z-90">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -42,7 +49,7 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-xl dropdown-content bg-current backdrop-opacity-85 backdrop-blur-2xl rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            class="menu menu-xl text-slate-950 dropdown-content isolate bg-base-100/20 backdrop-blur-xl rounded-box z-[80] mt-3 w-52 p-2 shadow">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>More</a></li>
@@ -103,7 +110,7 @@
         </div>
         </div>
      </div>
-<footer class="footer bg-current backdrop-opacity-85 backdrop-blur-sm items-center p-4">
+<footer class="footer text-slate-950 isolate bg-base-100/20 backdrop-blur-xl items-center p-4">
   <aside class="grid-flow-col items-center">
     <img src="assets/explode-web-logo-sm.webp">
     <p>Copyright © 2024 | A product of Redeaux Corp.</p>
@@ -145,24 +152,32 @@
   </nav>
 </footer>
 </body>
-  <script src="https://unpkg.com/htmx.org@latest/dist/htmx.min.js"></script>
-  <script src="https://unpkg.com/htmx-ext-preload@2.0.0/preload.js"></script>
-  <script src="https://unpkg.com/htmx-ext-sse@2.2.1/sse.js"></script>
-  <script src="https://unpkg.com/htmx-ext-ws@2.0.0/ws.js"></script>
-  <script src="https://unpkg.com/htmx-ext-head-support@2.0.0/head-support.js"></script>
-  <script src="https://unpkg.com/htmx-ext-response-targets@2.0.0/response-targets.js"></script>
-  <script src="https://unpkg.com/htmx-ext-ajax-header@2.0.1/ajax-header.js"></script>
-  <script src="https://unpkg.com/htmx-ext-alpine-morph@2.0.0/alpine-morph.js"></script>
-  <script src="https://unpkg.com/htmx-ext-class-tools@2.0.1/class-tools.js"></script>
-  <script src="https://unpkg.com/htmx-ext-client-side-templates@2.0.0/client-side-templates.js"></script>
-  <script src="https://unpkg.com/htmx-ext-disable-element@2.0.0/disable-element.js"></script>
-  <script src="https://unpkg.com/htmx-ext-restored@2.0.0/restored.js"></script>
-  <script src="https://unpkg.com/htmx-ext-remove-me@2.0.0/remove-me.js"></script>
-  <script src="https://unpkg.com/htmx-ext-path-params@2.0.0/path-params.js">
-  <script src="https://unpkg.com/htmx-ext-path-deps@2.0.0/path-deps.js"></script>
-  <script src="https://unpkg.com/htmx-ext-multi-swap@2.0.0/multi-swap.js"></script>
-  <script src="https://unpkg.com/htmx-ext-loading-states@2.0.0/loading-states.js"></script>
-  <script src="https://unpkg.com/htmx-ext-json-enc@2.0.0/json-enc.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/htmx.min.js" integrity="sha512-/POjPSnGjDaJfmt9O7LOTz1eGoCQNsVSJdgxYTVjhnWRDmuDFTvzwQrxIxipRrakLw7IYJfOsanDe7WuP40zxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/preload.min.js" integrity="sha512-Xvg5aJmBRjudaJ+uS8trOdgBR+Xu89XIw+LCZNVodGqv2Mc7lj9HE2jIQG9cYEHeg66EWKX1Qx3CrGvrkAuyYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/sse.min.js" integrity="sha512-JdVzzefVFeJhT4TxxZOjlVZ1XHDe7/L2fUGdEg7qMQoBl0hpbkgMfsWDVE+1cne2ZcqTXfCCJzOntCKxoI5UfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/ws.min.js" integrity="sha512-PMZ/4h/rtmykAGYcYH/3LlclLNbfw8YBX00PbDl2gyTvYg3ISN6Dx2AoGe+x5pZIUOcYL0g1fKBjZYWJ8s1fHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/method-override.min.js" integrity="sha512-zssOZZeZhyAKnwr2OnubnOGBubKvzHgK8GO6ACxVFrRzZsQoeK246VaZe+LmEgANJ6247UCL6RL13oNwYdMwKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/loading-states.min.js" integrity="sha512-fZO+wIgcWFC7EVQBZOV2tjsfjHTSQoBz7oW93sNX2Gl2ihS9i+tIRnoeuxKdghELkzwzVrQucquP5ihI447YOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/include-vals.min.js" integrity="sha512-7M8I2MRkL5e4qUJAv8DRqPPLmmZxMkmDqJb4Ptfl42usPzYBH8kPHvLkl68zfhtVIOSbNfgusNa9Xek1J5zq3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/head-support.min.js" integrity="sha512-e6FtIkRk8fR0VEaFSf7k9IOqjYiWEiifk7xpaocFZQJWFk/IW0av3C4rMqAXzbgH/TPCL+/xbrRyzeZUypZY/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/response-targets.min.js" integrity="sha512-ky00MOSm/zarhZe/4hAYeOgeOc6aU3EFXyH+dcpn76/IoJ6pVSyv2rHRCUo/oIe418f0Efazpnkh8cyr2hvLhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/event-header.min.js" integrity="sha512-2D1miVb3LobcRQ2E6ruuBPwu+7y6lxbnqOI2IZQFrwLFwBj6nm9Fy+sZ8tq6+vwRaxqpYqbgAVCvy3xmEV/IXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/ajax-header.min.js" integrity="sha512-ouQFRf+LLAntrzuYL9vK+09Ooa2BtGBPKT1DPT6JFr5FoJgf7FS6vp4f2llb1r3qy4bkziXB5HP6NDjfln2rCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/alpine-morph.min.js" integrity="sha512-34e+GSEmMhRmul1vScddgAvGA+8d+kvODxCamuuCXcbxamkFcHyZwUfioqmZzuCqszHDkRtykX2EuztFZ4fllA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/class-tools.min.js" integrity="sha512-LDgQvwqDaDD5fNjt/wDzMQE6w6fMZMH5oXZirMozZPCzvp3cq2hWfeWP2i9HlrHmTeoliO6KH2JkDhy47GGSQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/client-side-templates.min.js" integrity="sha512-xVw/JhsXWk5xnHdhM7NtPuJuRNTA6OUYCHoOrx+2tGo+1/eRi+rPvYFqqg6wtIe43bKRwBgOUL527HDh+1xPQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/disable-element.min.js" integrity="sha512-urTvVk+HciZxnPTWhKda0biHmqBIjkZspWAp28gU7DnGAl9IXXfKllkTd8E7sv1ZdY3oXvYZU9sJAVKSu9jTAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/restored.min.js" integrity="sha512-E2w72A7zK4tlB+U6frIgjLV4taqrsAoT6rvYthbmyH4Nd2sAof+r77mrEmhtDoYoOQasjHI0IxdpuTyfWH0gqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/remove-me.min.js" integrity="sha512-jbRb2o8b+s6tMGH4gIiHkVGKu1l7BZU7dP3f6vbn5cBLl6Bo3/x6HDhs48ti4LqYHoOSNESt584asyYvna/QBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/path-params.min.js" integrity="sha512-CXzIiyfmRdUEsIj147/egiKGFiqzwGGNqjQe3RlbYnv9qoioZIMvEPWwVNGGkBMAB59+hfoBRCmqiXtJAcPESQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/path-deps.min.js" integrity="sha512-6PRGCFmWN9ZobRGI41CkT3T95TBpGsM01474eKIWLZ2pY3Vfppvf/Ak/vctp0ntgLyHU1VjuXe2hdXpN8NeGjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/multi-swap.min.js" integrity="sha512-M+5Mb9eoNiujvD5W6JOYGWR3ftIvCuOnZTPGBPRnCxu9aOezdCL0jhKcfROJiKjtnszHGlO36sTHTfU/7m60/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/ext/json-enc.min.js" integrity="sha512-do/Jl4Z0wEs6l9RwMG+29jVz6H9RzAI7YvdQ8gAzXs6Qe8FhiJ74hMrNILyMFqXBSm/d5le1TwG0muR84lzjIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script defer src="https://unpkg.com/@alpinejs/morph@3.x.x/dist/cdn.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.1/cdn.min.js" integrity="sha512-ytM6hP1K9BkRTjUQZpxZKFjJ2TvE4QXaK7phVymsm7NimaI5H09TWWW6f2JMbonLp4ftYU6xfwQGoe3C8jta9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html-gl/0.3.1/htmlgl.min.js" integrity="sha512-MffjPWwAY9ra9a7OXYEo1j9JiYD8IHJ6Pr1hjxSKk7gNzpYk6YRFB0QOQNg7EvxBosNclFOjl7Fe+1cMGI3rEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html-gl/0.3.1/htmlgl-effects.min.js" integrity="sha512-PeoE+pC023Q/euBwDhG5IeSsPIkHP9zW2ZW9vA5wlL4wx/StFtGduBeCFc9f4gUUOGqy9BarL2oF83QIRG65yA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jsonld/8.3.2/jsonld.min.js" integrity="sha512-z/qF7jT9tc2CTR6DsN5MzG9rAA0Eu8uMwZoUtYF+g8LEN3wiLNAfsmHcAhS5tc451SFj8Ix/fNiVXLNEd2njIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/adblock-detect/1.0.5/index.min.js" integrity="sha512-MpK+8sQ0u/d6tKQWiw28XzVd0DFBYWreO5CO3vNn5hYd1S/s5h9D8H8AC+ZrPpi01YVh5vG/bhgjDWZJ7Bfvxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </html>
